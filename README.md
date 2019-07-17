@@ -1,5 +1,5 @@
 # treehouse-project4
-Here is my Project 4 submission. This is a phrase hunter
+Here is my Project 4 submission. This is the Phrase Hunter game. I hope you enjoy it! Here's the things that my code includes:
 
 Phrase Class:
 - Includes constructor that receives a phrase parameter and initializes a phrase property set to the phrase
