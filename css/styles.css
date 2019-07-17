@@ -1,0 +1,212 @@
+/* Main styles */
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+
+/* Variables */
+
+:root {
+  --color-neutral: #023fc2;
+  --color-neutral-light: #ffffff18;
+  --color-keys: #37474F;
+  --color-keys-light: #ffffffa8;
+  --font-size-large: 60px;
+  --font-size-medium: 20px;
+  --transition: all 1s ease-in-out;
+}
+
+/* main */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+body {
+  justify-content: space-evenly;
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+}
+
+li, ol, ul {
+  padding: 0;
+  display: inline-block;
+}
+
+h2 {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: var(--font-size-large);
+  margin: 0;
+}
+
+h1 {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+button {
+  margin: 6px;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  color: var(--color-keys);
+  font-size: var(--font-size-medium);
+  background-color: var(--color-keys-light);
+  border-radius: 5px;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+#btn__reset {
+	width: 200px;
+	margin: 0 auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  max-height: 900px;
+  text-align: center;
+  background-image: url('https://images3.alphacoders.com/739/thumb-1920-73967.jpg');
+}
+
+.section {
+  width: 100%;
+  padding: 10px;
+}
+
+#phrase ul li{
+  margin-top: 15px;
+}
+
+/* Title */
+
+.header {
+  color: #e5ff00;
+}
+
+
+/* Phrase */
+
+.letter {
+  font-size: var(--font-size-medium);
+  height: 65px;
+  width: 65px;
+  padding: 20px 1px 0 1px;
+  margin-right: 2px;
+  color: transparent;
+  background: var(--color-neutral-light);
+  border-radius: 5px;
+}
+
+.space {
+  width: 15px;
+}
+
+.show {
+  color: rgb(255, 38, 165);
+  background-color: #620b74;
+  font-size: 20px;
+  height: 65px;
+  width: 65px;
+  padding: 20px 1px 0 1px;
+  margin-right: 2px;
+  border-radius: 5px;
+  -webkit-animation-duration: .5s;
+  animation-duration: .5s;
+}
+
+
+/* Keyboard */
+
+.keyrow {
+  display: flex;
+  justify-content: center;
+}
+
+.key {
+  background-color: #00000048;
+  color: #ffffff;
+}
+
+.chosen {
+  background: #00b1b1;
+  border-radius: 5px;
+  font-size: var(--font-size-medium);
+  color: #FFFFFF;
+}
+
+.wrong {
+  background: #e73f3f;
+  color: #000000;
+}
+
+.btn__reset {
+  padding: 16px;
+  margin: 50px auto;
+  background-color: #d4cfcf83;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: solid 4px #0000004d;
+  border-right: solid 3px #0000004d
+}
+
+.btn__reset:active {
+  padding: 14px 16px 16px 14px;
+  border-bottom: solid 4px #00000000;
+  border-right: solid 3px #00000000;
+}
+
+
+/* Overlay */
+
+#overlay {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  color: #000000;
+  justify-content: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 5px;
+}
+
+.title {
+  color: #106800;
+}
+
+.start {
+  background-image: url('https://images3.alphacoders.com/739/thumb-1920-73967.jpg');
+}
+
+.start a {
+  color: #fff;
+}
+
+.win {
+  background-image: url('https://media1.tenor.com/images/76f109048d0422e42f09420b45f74d9e/tenor.gif?itemid=6021225');
+  background-repeat: no-repeat; 
+  background-position: center top;
+  background-color: #000000;
+}
+
+.win a {
+  color: var(--color-win);
+}
+
+.lose {
+  background-image: url('https://media1.tenor.com/images/9236cfb7279491e0acc360ffb806283c/tenor.gif?itemid=4950374');
+  background-repeat: no-repeat; 
+  background-position: center bottom;
+  background-color: #000000;
+}
+
+.lose a {
+  color: var(--color-lose);
+}
