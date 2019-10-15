@@ -1,5 +1,11 @@
 # treehouse-project4
-Here is my Project 4 submission. This is the Phrase Hunter game. I hope you enjoy it! Here's the things that my code includes:
+This is a Phrase Hunter game that was created by using OOP JavaScript. I hope you enjoy it!
+
+Technologies:
+- JavaScript
+- Object-Oriented Programming Javascript
+- HTML
+- CSS
 
 Phrase Class:
 - Includes constructor that receives a phrase parameter and initializes a phrase property set to the phrase
